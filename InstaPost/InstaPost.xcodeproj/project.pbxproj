@@ -16,6 +16,7 @@
 		8292FC8525CF356B00DE9A73 /* InstaPostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8292FC8425CF356B00DE9A73 /* InstaPostTests.swift */; };
 		8292FC9025CF356B00DE9A73 /* InstaPostUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8292FC8F25CF356B00DE9A73 /* InstaPostUITests.swift */; };
 		8292FCA225CF361D00DE9A73 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8292FCA125CF361D00DE9A73 /* ImagePickerView.swift */; };
+		8292FCC025CF4A3C00DE9A73 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8292FCBF25CF4A3C00DE9A73 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		8292FC8F25CF356B00DE9A73 /* InstaPostUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaPostUITests.swift; sourceTree = "<group>"; };
 		8292FC9125CF356B00DE9A73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8292FCA125CF361D00DE9A73 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		8292FCBF25CF4A3C00DE9A73 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				8292FC6D25CF356A00DE9A73 /* AppDelegate.swift */,
 				8292FC6F25CF356A00DE9A73 /* SceneDelegate.swift */,
 				8292FC7125CF356A00DE9A73 /* ContentView.swift */,
+				8292FCBF25CF4A3C00DE9A73 /* MainViewModel.swift */,
 				8292FCA125CF361D00DE9A73 /* ImagePickerView.swift */,
 				8292FC7325CF356B00DE9A73 /* Assets.xcassets */,
 				8292FC7825CF356B00DE9A73 /* LaunchScreen.storyboard */,
@@ -269,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8292FCC025CF4A3C00DE9A73 /* MainViewModel.swift in Sources */,
 				8292FCA225CF361D00DE9A73 /* ImagePickerView.swift in Sources */,
 				8292FC6E25CF356A00DE9A73 /* AppDelegate.swift in Sources */,
 				8292FC7025CF356A00DE9A73 /* SceneDelegate.swift in Sources */,

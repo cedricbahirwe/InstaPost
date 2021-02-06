@@ -5,19 +5,18 @@
 //  Created by Cédric Bahirwe on 06/02/2021.
 //
 
-import Foundation
 import SwiftUI
 import UIKit
 import Photos
 
 struct ImagePicker: UIViewControllerRepresentable {
     
-    
     @Environment(\.presentationMode) var presentationMode
     @Binding var image: UIImage
-    var onFinish: (() -> ()) = {}
-    var onCancel: (() -> ()) = {}
     @Binding var sourceType: UIImagePickerController.SourceType
+
+    var onCancelPicking: (() -> ()) = {}
+    var onFinishPicking: (() -> ()) = {}
     
     func makeCoordinator() -> Coordinator {
         return Coordinator(self)
@@ -43,7 +42,7 @@ struct ImagePicker: UIViewControllerRepresentable {
         }
         
         func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-            parent.onCancel()
+            parent.onCancelPicking()
             parent.presentationMode.wrappedValue.dismiss()
         }
         
@@ -56,7 +55,7 @@ struct ImagePicker: UIViewControllerRepresentable {
                 print("actual size of image in KB: %f ", Double(imageSize) / 1000.0)
                 parent.image = uiImage
             }
-            parent.onFinish()
+            parent.onFinishPicking()
 
             parent.presentationMode.wrappedValue.dismiss()
         }
@@ -65,5 +64,3 @@ struct ImagePicker: UIViewControllerRepresentable {
     }
     
 }
-
-extension ImagePicker.Coordinator: UIDocumentInteractionControllerDelegate { }
